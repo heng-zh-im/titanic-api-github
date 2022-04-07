@@ -1,17 +1,3 @@
-# titanic-api: Flask
-
-Implemented using [Flask][] microframework.
-
-## Installation and launching
-
-### Clone
-
-Clone the repo:
-
-``` bash
-git clone git@gitlab.com:ContainerSolutions/titanic-api.git
-cd titanic-api/python/flask/
-```
 
 ### Install
 
