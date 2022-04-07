@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: flask-app:latest
+          image: acrzh.azurecr.io/flask-app:latest
           imagePullPolicy: Never
           ports:
             - name: http
