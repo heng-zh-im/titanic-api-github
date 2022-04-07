@@ -1,0 +1,4 @@
+CREATE TABLE passengers (id SERIAL,survived INT,pclass INT,name VARCHAR(200),sex VARCHAR(50),age float8,siblings_spouses_aboard INT,parents_children_aboard INT,fare float8,PRIMARY KEY (id));
+\copy passengers(survived,pclass,name,sex,age,siblings_spouses_aboard,parents_children_aboard,fare) FROM '/var/lib/postgresql/data/titanic.csv' DELIMITER ',' CSV HEADER;
+SELECT * FROM passengers LIMIT 30;
+\q
