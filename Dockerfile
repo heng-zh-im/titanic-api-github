@@ -18,6 +18,6 @@ RUN pip3 install -r requirements.txt
 
 ENV DATABASE_URL=postgresql+psycopg2://postgresadmin:admin123@postgres:5432/postgresdb
 
-EXPOSE 80
+EXPOSE 5000
 
 CMD ["python3", "run.py"]

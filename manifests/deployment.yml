@@ -1,24 +1,19 @@
-apiVersion: apps/v1
+apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: flask
+  name: "aksdemo-728e"
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: flask
+      app: "aksdemo-728e"
   template:
     metadata:
       labels:
-        app: flask
+        app: "aksdemo-728e"
     spec:
       containers:
-        - name: flask
-          image: acrzh.azurecr.io/flask-app:latest
-          imagePullPolicy: Never
+        - name: "aksdemo-728e"
+          image: "acrzh.azurecr.io/aksdemo"
           ports:
-            - name: http
-              containerPort: 5000
-          envFrom:
-            - secretRef:
-                name: postgres-secrets
+          - containerPort: 5000
