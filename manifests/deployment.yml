@@ -16,4 +16,4 @@ spec:
         - name: "aksdemo-728e"
           image: "acrzh.azurecr.io/aksdemo"
           ports:
-          - containerPort: 5000
+          - containerPort: 80
