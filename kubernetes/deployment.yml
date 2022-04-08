@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flask
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: flask
@@ -18,7 +18,7 @@ spec:
           imagePullPolicy: Never
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 5000
           envFrom:
             - secretRef:
                 name: postgres-secrets
